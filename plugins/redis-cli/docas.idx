@@ -1,0 +1,1 @@
+f | _redis-cli | g | 7.2K |  | alexandru totolici | alex@hackd.net | 1310961666 |  | Fixed typo for one of the subcommands (linset -> linsert)

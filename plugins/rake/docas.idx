@@ -1,0 +1,1 @@
+f | rake.plugin.zsh | g | 273B |  | max sharples | maxsharples@gmail.com | 1326853408 |  | added a rake plugin to disable zsh file globbing when calling rake tasks with square brackets

@@ -1,0 +1,2 @@
+f | _task | g | 5.9K |  | lepht | pete.clark@gmail.com | 1326936571 |  | Updated to latest version of taskwarrior completions (using Taskwarrior 2.0b4)
+f | taskwarrior.plugin.zsh | g | 834B |  | Pete Clark | pete.clark@gmail.com | 1306265345 |  | Adds oh-my-zsh plugin to load TaskWarrior completions

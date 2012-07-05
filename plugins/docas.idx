@@ -1,0 +1,78 @@
+d | rails3 |  | 1 items |  | Weston Platter | westonplatter@gmail.com | 1338592313 |  | rails3, added rgm = 'rails generate migration'
+d | lein |  | 1 items |  | Sankara Rameswaran | sankara@bankbazaar.com | 1300620673 |  | Lein completion
+d | knife |  | 1 items |  | Robby Russell | robby@planetargon.com | 1324924209 |  | Merge pull request #710 from moutten/patch-1  Add the --format tag to knife list commands
+d | ant |  | 1 items |  | Brian Riddle | brian.riddle@tv4.se | 1306844203 |  | fix double -f and corrected format.  -f%m was getting called twice in the stat_cmd corrected format of stat command from y to Y.
+d | mercurial |  | 1 items |  | Mark Drago | markdrago@gmail.com | 1325803153 |  | remove the -v flag from a few mercurial aliases  The -v flag for these commands really isn't very useful.  It will output some information about the hooks it is running, but that is generally not useful and just noisy.  The desire to add -v to these commands is exceptional and IMHO it's better to make the common case of not seeing those messages the supported behavior.
+d | mvn |  | 1 items |  | Fredrik Appelberg | fredrik.appelberg@gmail.com | 1297849251 |  | mvn plugin
+d | fasd |  | 1 items |  | Alexander Berezovsky | ab@plumdistrict.com | 1337817242 |  | add fasd plugin
+d | powder |  | 1 items |  | Rahul Trikha | rahul.trikha@gmail.com | 1312250049 |  | Added auto complete plugin for powder gem https://github.com/Rodreegez/powder
+d | django |  | 1 items |  | Gael Pasgrimaud | gael@gawel.org | 1322402851 |  | allow django-manage completion. http://pypi.python.org/pypi/DjangoDevKit
+d | svn |  | 1 items |  | Mat Gadd | mgadd@names.co.uk | 1336046603 |  | Don't drop everything after a trailing slash, as this breaks standard svn branches: ^/branches/featurename ^/releases/Release-vx.y ^/trunk
+d | wakeonlan |  | 3 items |  | Paul Gideon Dann | pdgiddie@gmail.com | 1316507235 |  | Adding README file for the wakeonlan plugin
+d | phing |  | 1 items |  | Claus Witt | claus@wittnezz.dk | 1289989023 |  | Removed the echo statement - no need for that.
+d | github |  | 2 items |  | Daniel Hahler | git@thequod.de | 1322139430 |  | Only alias git=hub if `hub --version` works.  `hub` is crashing for me on a old CentOS setup with "undefined method `shelljoin'".  On first use of the `git` function it is now checked if `hub --version` returns successfully.
+d | virtualenvwrapper |  | 1 items |  | David Barragan | david.barragan@kaleidos.net | 1340614523 |  | Added another path
+d | git-flow |  | 1 items |  | Erich Menge | erich.menge@me.com | 1338745454 |  | Add a couple of options for git-flow.
+d | gpg-agent |  | 1 items |  | Florian Walch | florian.walch@gmx.at | 1287154239 |  | Added gpg-agent plugin  Based on ssh-agent plugin.
+d | symfony2 |  | 1 items |  | Andrew Tch | andrew@noop.lv | 1324160611 |  | Symfony 2 completion
+d | ssh-agent |  | 1 items |  | gwjo | gowen72@gmail.com | 1307241289 |  | Add support for loading mulitple identities
+d | redis-cli |  | 1 items |  | alexandru totolici | alex@hackd.net | 1310961666 |  | Fixed typo for one of the subcommands (linset -> linsert)
+d | thor |  | 1 items |  | Andrew Hodges | betawaffle@gmail.com | 1306602723 |  | Thor  Add plugin with completion for thor.
+d | battery |  | 1 items |  | Peter Hoeg | p.hoeg@northwind.sg | 1319091133 |  | add: battery plugin
+d | lighthouse |  | 1 items |  | Tom Stuart | tom@therye.org | 1288697209 |  | Fix lighthouse plugin error message
+d | vundle |  | 1 items |  | Max Gonzih | gonzih@gmail.com | 1314968832 |  | Merge branch 'master' of github.com:Gonzih/oh-my-zsh
+d | osx |  | 2 items |  | Sorin Ionescu | sorin.ionescu@gmail.com | 1306974255 |  | Added man-preview completion suggested by @webflo.
+d | archlinux |  | 1 items |  | ornicar | thibault.duplessis@gmail.com | 1319529314 |  | Add yaourt --sucre alias in archlinux plugin
+d | npm |  | 1 items |  | Sorin Ionescu | sorin.ionescu@gmail.com | 1306974156 |  | Replaced npm 0.x completion with 1.0 completion.
+d | ruby |  | 1 items |  | Patrick Lindborg | lindborg@gmail.com | 1325537299 |  | Fixed the rfind command in the  ruby plugin
+d | gas |  | 1 items |  | Fredrik Wallgren | fredrik.wallgren@gmail.com | 1311994645 |  | Replace forgotten rubies with authors
+d | rbenv |  | 1 items |  | Robby Russell | robby@planetargon.com | 1341321953 |  | Merge pull request #1170 from dipth/master  Explicitly tell rbenv to use zsh
+d | python |  | 1 items |  | dir01 | dir01@dir01.org | 1332365659 |  | Python plugin: added pygrep command, simplified pyclean
+d | terminitor |  | 1 items |  | Philipp Bosch | hello@pb.io | 1316093950 |  | terminitor plugin: add autocompletion also for edit, delete and setup subcommands.
+d | rbfu |  | 1 items |  | lukas | lukas.westermann@gmail.com | 1341302382 |  | provide plugin for rbfu the ruby version switcher  Evaluates $(rbfu --init --auto) if rbfu is installed on the system, also has a custom rbfu-rubies method which lists the installed rubies which are available to rbfu.  For compatibility with themes, also creates the rvm_prompt_info function, so existing themes should work out of the box.
+d | extract |  | 2 items |  | Daniel Bye | dan@slightlystrange.org | 1326720847 |  | Removed the assignments to fpath as well, since that's all handled in the .oh-my-zsh/oh-my-zsh.sh boot script.
+d | gradle |  | 1 items |  | Matthew Git McCullough | matthewm@ambientideas.com | 1313080067 |  | Added a gradle build tool plugin  * Enhanced gradle plugin to parse tasks from a quick execution of the tool * Added a duplicated function for gradlew completion that uses gradlew internally. Builds like Gradle itself (built with Gradle) are sensitive to being run with a matching gradlew version. * Fixed broken caching of gradle task names. Added - and -- argument completions.
+d | heroku |  | 1 items |  | Ali B | dmondark@gmail.com | 1313073635 |  | Heroku completion plugin
+d | rake |  | 1 items |  | max sharples | maxsharples@gmail.com | 1326853408 |  | added a rake plugin to disable zsh file globbing when calling rake tasks with square brackets
+d | rvm |  | 2 items |  | Andreas Steinel | A.Steinel@gmail.com | 1325121760 |  | multiple versions could occur and should also be highlighted
+d | grails |  | 1 items |  | Zach Riggle | zach@riggle.me | 1315652853 |  | [plugins/grails] Remove warning message; it's always displayed
+d | sublime |  | 1 items |  | Varun Vijayaraghavan | varun.vijayaraghavan@visualrevenue.com | 1337873599 |  | Fixed a bug in checking the platform
+d | perl |  | 1 items |  | Daniel Bolton | danielbarrettbolton@gmail.com | 1300081413 |  | add Perl plugins file
+d | debian |  | 1 items |  | mapc | musikmichael@web.de | 1338294925 |  | Add command to directly install the output of acs
+d | pow |  | 1 items |  | John Antoni Griffiths | john@johnantoni.com | 1326929771 |  | bug : stop creating those ~ directories add powit command to symlink an app if it hasn't been already
+d | cpanm |  | 1 items |  | Pat Regan | thehead@patshead.com | 1302644469 |  | Optimize plugin loading so that only one call to compinit is required
+d | gnu-utils |  | 1 items |  | Sorin Ionescu | sorin.ionescu@gmail.com | 1306974879 |  | Added gnu-utils plugin.
+d | dircycle |  | 1 items |  | Rotem Yaari | vmalloc@gmail.com | 1330589974 |  | Add dircycle plugin: enables cycling through the directory stack
+d | cap |  | 1 items |  | Andrew Hodges | betawaffle@gmail.com | 1306602363 |  | Cleanup  Add missing newlines at EOF. Remove redundant comment. Fix grammar in comment.
+d | apache2-macports |  | 1 items |  | Alexander Rinass | alex@rinass.net | 1303331548 |  | Added start/stop aliases for Apache 2 installation via macports.
+d | mysql-macports |  | 1 items |  | Alexander Rinass | alex@rinass.net | 1303326818 |  | Fixed folder naming for mysql-macports plugin and improved start/stop scripts.
+d | suse |  | 1 items |  | Roey Darwish Dror | roey.ghost@gmail.com | 1337595424 |  | Added zp and zps aliases for the SUSE plugin
+d | lol |  | 1 items |  | thunfischbrot | moritz@moritzsuess.de | 1307312386 |  | Included some essential aliases, inspired by http://lolcode.com/
+d | command-not-found |  | 1 items |  | Joseph Jon Booker | joe@neoturbine.net | 1288040536 |  | command-not-found package in ubuntu
+d | yum |  | 1 items |  | Roey Darwish Dror | roey.ghost@gmail.com | 1339744042 |  | Fixed unmached " in yum plugin
+d | git |  | 1 items |  | pomaxa | pomaxa@ambergames.com | 1330613820 |  | current repository action
+d | compleat |  | 1 items |  | Andrew Hodges | betawaffle@gmail.com | 1306602363 |  | Cleanup  Add missing newlines at EOF. Remove redundant comment. Fix grammar in comment.
+d | cloudapp |  | 2 items |  | Matthew McCullough | matthewm@ambientideas.com | 1309313340 |  | Added cloudapp from @holman of @GitHub fame
+d | sprunge |  | 1 items |  | Matt Parnell | parwok@gmail.com | 1324001884 |  | add sprunge.us pastebin uploader - uses files, or pipes
+d | taskwarrior |  | 2 items |  | lepht | pete.clark@gmail.com | 1326936571 |  | Updated to latest version of taskwarrior completions (using Taskwarrior 2.0b4)
+d | nyan |  | 1 items |  | Robby Russell | robby@planetargon.com | 1323208291 |  | Adding critical security patch to let you all know I'm on top of this shit. add 'nyan' to your plugins... then run  for security upgrade.
+d | cake |  | 1 items |  | Nick Stenning | nick@whiteink.com | 1316881340 |  | Better cake completion: don't barf on options, and don't clobber user's namespace
+d | terminalapp |  | 1 items |  | Alexander Madyankin | alexander@madyankin.name | 1325740577 |  | Apple Terminal.app resume directory plugin
+d | autojump |  | 1 items |  | Calogero Lo Leggio | kalos@nerdrug.org | 1326186076 |  | check if autojump is installed
+d | bundler |  | 2 items |  | Tim Littlemore | tim@tjl2.com | 1338560782 |  | Removing ey command from bundled_commands. It is not usually bundled.
+d | kate |  | 1 items |  | Daniel Wehner | daniel.wehner@erdfisch.de | 1301148390 |  | Add a plugin to support kate the kde texteditor
+d | screen |  | 1 items |  | Fredrik Appelberg | fredrik.appelberg@scanpix.se | 1299669541 |  | figuring out home dir on unix systems as well
+d | node |  | 1 items |  | Andrew Hodges | betawaffle@gmail.com | 1306764540 |  | Rollback of Pull #366  sorin-ionescu had some good points.
+d | brew |  | 2 items |  | Andrew Hodges | betawaffle@gmail.com | 1306764540 |  | Rollback of Pull #366  sorin-ionescu had some good points.
+d | vi-mode |  | 1 items |  | Robby Russell | robby@planetargon.com | 1285907646 |  | Reorganizing plugins so that each plugin has it's own directory now so that any plugin-specific functions can be bundled within there.
+d | encode64 |  | 1 items |  | Vitaliy Yanchuk | fuksito@gmail.com | 1331899837 |  | Plugin for encoding strings into base64 and decoding them
+d | jruby |  | 1 items |  | Volker Pacher | volker.pacher@gmail.com | 1340386391 |  | added jexec
+d | macports |  | 2 items |  | Pat Regan | thehead@patshead.com | 1302644469 |  | Optimize plugin loading so that only one call to compinit is required
+d | history-substring-search |  | 3 items |  | Suraj N. Kurapati | sunaku@gmail.com | 1311787735 |  | move history-substring-search* files into plugins/
+d | rails |  | 1 items |  | Godwin Ko | godwin.ko@athenabest.com | 1318983109 |  | add rails runner alias
+d | gem |  | 1 items |  | Pat Regan | thehead@patshead.com | 1302644469 |  | Optimize plugin loading so that only one call to compinit is required
+d | jake-node |  | 1 items |  | Lachèze Alexandre | alexandre.lacheze@gmail.com | 1322826844 |  | Jake-node plugin : update - remove the need to write a `jake_tasks` in the directory - use most recent usage of completion with zsh - tested for MacOSX and Ubuntu
+d | pip |  | 1 items |  | Max Persson | max@maxpersson.com | 1323263383 |  | Added message when caching packages
+d | vagrant |  | 1 items |  | Pat Regan | thehead@patshead.com | 1302644469 |  | Optimize plugin loading so that only one call to compinit is required
+d | textmate |  | 1 items |  | Gil Vandendriesssche | vdd.gil@gmail.com | 1315984381 |  | Textmate plugin update to take Gemfile and cucumber features in account
+d | dirpersist |  | 1 items |  | s3 | s3+dev@sdfeu.org | 1339489082 |  | Change hardcoded ~/.oh-my-zsh to $ZSH.

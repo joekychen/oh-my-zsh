@@ -1,0 +1,1 @@
+f | phing.plugin.zsh | g | 458B |  | Claus Witt | claus@wittnezz.dk | 1289989023 |  | Removed the echo statement - no need for that.

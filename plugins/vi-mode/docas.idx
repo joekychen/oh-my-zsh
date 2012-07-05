@@ -1,0 +1,1 @@
+f | vi-mode.plugin.zsh | g | 526B |  | Robby Russell | robby@planetargon.com | 1285907646 |  | Reorganizing plugins so that each plugin has it's own directory now so that any plugin-specific functions can be bundled within there.

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html><head><title>joekychen/oh-my-zsh » oh-my-zsh.sh
+
+</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="generator" content="Docco">
+<link rel="stylesheet" media="all" href="stylesheets/docco.min.css" />
+
+
+</head>
+<body>
+<div id="container">
+<div id="background"></div>
+<table cellpadding="0" cellspacing="0">
+<thead><tr><th class="docs"><a id="home" href="index.html"></a><h1>oh-my-zsh.sh</h1></th><th class="code"></th></tr></thead>
+<tbody>
+
+
+<tr id="section-1"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-1">&#182;</a></div><p>Check for updates on initial load...</p></td><td class="code"><div class="highlight"><pre><span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$DISABLE_AUTO_UPDATE&quot;</span> !<span class="o">=</span> <span class="s2">&quot;true&quot;</span> <span class="o">]</span>
+<span class="k">then</span>
+  /usr/bin/env <span class="nv">ZSH</span><span class="o">=</span><span class="nv">$ZSH</span> zsh <span class="nv">$ZSH</span>/tools/check_for_upgrade.sh
+<span class="k">fi</span></pre></div></td></tr>
+
+
+<tr id="section-2"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-2">&#182;</a></div><p>Initializes Oh My Zsh</p></td><td class="code"><div class="highlight"><pre></pre></div></td></tr>
+
+
+<tr id="section-3"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-3">&#182;</a></div><p>add a function path</p></td><td class="code"><div class="highlight"><pre><span class="nv">fpath</span><span class="o">=(</span><span class="nv">$ZSH</span>/functions <span class="nv">$ZSH</span>/completions <span class="nv">$fpath</span><span class="o">)</span></pre></div></td></tr>
+
+
+<tr id="section-4"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-4">&#182;</a></div><p>Load all of the config files in ~/oh-my-zsh that end in .zsh
+TIP: Add files you don't want in git to .gitignore</p></td><td class="code"><div class="highlight"><pre><span class="k">for </span>config_file <span class="o">(</span><span class="nv">$ZSH</span>/lib/*.zsh<span class="o">)</span> <span class="nb">source</span> <span class="nv">$config_file</span></pre></div></td></tr>
+
+
+<tr id="section-5"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-5">&#182;</a></div><p>Set ZSH_CUSTOM to the path where your custom config files
+and plugins exists, or else we will use the default custom/</p></td><td class="code"><div class="highlight"><pre><span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;$ZSH_CUSTOM&quot;</span> <span class="o">]]</span>; <span class="k">then</span>
+<span class="k">    </span><span class="nv">ZSH_CUSTOM</span><span class="o">=</span><span class="s2">&quot;$ZSH/custom&quot;</span>
+<span class="k">fi</span>
+
+
+is_plugin<span class="o">()</span> <span class="o">{</span>
+  <span class="nb">local </span><span class="nv">base_dir</span><span class="o">=</span><span class="nv">$1</span>
+  <span class="nb">local </span><span class="nv">name</span><span class="o">=</span><span class="nv">$2</span>
+  <span class="nb">test</span> -f <span class="nv">$base_dir</span>/plugins/<span class="nv">$name</span>/<span class="nv">$name</span>.plugin.zsh <span class="se">\</span>
+    <span class="o">||</span> <span class="nb">test</span> -f <span class="nv">$base_dir</span>/plugins/<span class="nv">$name</span>/_<span class="nv">$name</span>
+<span class="o">}</span></pre></div></td></tr>
+
+
+<tr id="section-6"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-6">&#182;</a></div><p>Add all defined plugins to fpath. This must be done
+before running compinit.</p></td><td class="code"><div class="highlight"><pre><span class="k">for </span>plugin <span class="o">(</span><span class="nv">$plugins</span><span class="o">)</span>; <span class="k">do</span>
+<span class="k">  if </span>is_plugin <span class="nv">$ZSH_CUSTOM</span> <span class="nv">$plugin</span>; <span class="k">then</span>
+<span class="k">    </span><span class="nv">fpath</span><span class="o">=(</span><span class="nv">$ZSH_CUSTOM</span>/plugins/<span class="nv">$plugin</span> <span class="nv">$fpath</span><span class="o">)</span>
+  <span class="k">elif </span>is_plugin <span class="nv">$ZSH</span> <span class="nv">$plugin</span>; <span class="k">then</span>
+<span class="k">    </span><span class="nv">fpath</span><span class="o">=(</span><span class="nv">$ZSH</span>/plugins/<span class="nv">$plugin</span> <span class="nv">$fpath</span><span class="o">)</span>
+  <span class="k">fi</span>
+<span class="k">done</span></pre></div></td></tr>
+
+
+<tr id="section-7"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-7">&#182;</a></div><p>Load and run compinit</p></td><td class="code"><div class="highlight"><pre>autoload -U compinit
+compinit -i</pre></div></td></tr>
+
+
+<tr id="section-8"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-8">&#182;</a></div><p>Load all of the plugins that were defined in ~/.zshrc</p></td><td class="code"><div class="highlight"><pre><span class="k">for </span>plugin <span class="o">(</span><span class="nv">$plugins</span><span class="o">)</span>; <span class="k">do</span>
+<span class="k">  if</span> <span class="o">[</span> -f <span class="nv">$ZSH_CUSTOM</span>/plugins/<span class="nv">$plugin</span>/<span class="nv">$plugin</span>.plugin.zsh <span class="o">]</span>; <span class="k">then</span>
+<span class="k">    </span><span class="nb">source</span> <span class="nv">$ZSH_CUSTOM</span>/plugins/<span class="nv">$plugin</span>/<span class="nv">$plugin</span>.plugin.zsh
+  <span class="k">elif</span> <span class="o">[</span> -f <span class="nv">$ZSH</span>/plugins/<span class="nv">$plugin</span>/<span class="nv">$plugin</span>.plugin.zsh <span class="o">]</span>; <span class="k">then</span>
+<span class="k">    </span><span class="nb">source</span> <span class="nv">$ZSH</span>/plugins/<span class="nv">$plugin</span>/<span class="nv">$plugin</span>.plugin.zsh
+  <span class="k">fi</span>
+<span class="k">done</span></pre></div></td></tr>
+
+
+<tr id="section-9"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-9">&#182;</a></div><p>Load all of your custom configurations from custom/</p></td><td class="code"><div class="highlight"><pre><span class="k">for </span>config_file <span class="o">(</span><span class="nv">$ZSH_CUSTOM</span>/*.zsh<span class="o">(</span>N<span class="o">))</span> <span class="nb">source</span> <span class="nv">$config_file</span></pre></div></td></tr>
+
+
+<tr id="section-10"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-10">&#182;</a></div><p>Load the theme</p></td><td class="code"><div class="highlight"><pre><span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$ZSH_THEME&quot;</span> <span class="o">=</span> <span class="s2">&quot;random&quot;</span> <span class="o">]</span>
+<span class="k">then</span>
+<span class="k">  </span><span class="nv">themes</span><span class="o">=(</span><span class="nv">$ZSH</span>/themes/*zsh-theme<span class="o">)</span>
+  <span class="nv">N</span><span class="o">=</span><span class="k">${#</span><span class="nv">themes</span><span class="p">[@]</span><span class="k">}</span>
+  <span class="o">((</span><span class="nv">N</span><span class="o">=(</span>RANDOM%N<span class="o">)</span>+1<span class="o">))</span>
+  <span class="nv">RANDOM_THEME</span><span class="o">=</span><span class="k">${</span><span class="nv">themes</span><span class="p">[</span><span class="nv">$N</span><span class="p">]</span><span class="k">}</span>
+  <span class="nb">source</span> <span class="s2">&quot;$RANDOM_THEME&quot;</span>
+  <span class="nb">echo</span> <span class="s2">&quot;[oh-my-zsh] Random theme &#39;$RANDOM_THEME&#39; loaded...&quot;</span>
+<span class="k">else</span>
+<span class="k">  if</span> <span class="o">[</span> ! <span class="s2">&quot;$ZSH_THEME&quot;</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="o">]</span>
+  <span class="k">then</span>
+<span class="k">    if</span> <span class="o">[</span> -f <span class="s2">&quot;$ZSH_CUSTOM/$ZSH_THEME.zsh-theme&quot;</span> <span class="o">]</span>
+    <span class="k">then</span>
+<span class="k">      </span><span class="nb">source</span> <span class="s2">&quot;$ZSH_CUSTOM/$ZSH_THEME.zsh-theme&quot;</span>
+    <span class="k">else</span>
+<span class="k">      </span><span class="nb">source</span> <span class="s2">&quot;$ZSH/themes/$ZSH_THEME.zsh-theme&quot;</span>
+    <span class="k">fi</span>
+<span class="k">  fi</span>
+<span class="k">fi</span>
+
+</pre></div></td></tr>
+
+</tbody>
+</table>
+</div>
+
+</body>
+<script>docas={repo:"joekychen/oh-my-zsh",depth:0}</script>
+<script>document.write('<script src=' + ('__proto__' in {} ? 'http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js' : 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')+'><\\/script>')</script>
+<script src="http://baoshan.github.com/moment/min/moment.min.js"></script>
+<script src="javascript/docco.min.js"></script>
+</html>

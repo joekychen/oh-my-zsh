@@ -1,0 +1,1 @@
+f | mysql-macports.plugin.zsh | g | 371B |  | Alexander Rinass | alex@rinass.net | 1303326818 |  | Fixed folder naming for mysql-macports plugin and improved start/stop scripts.

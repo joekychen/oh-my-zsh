@@ -1,0 +1,2 @@
+f | github.plugin.zsh | g | 1.8K |  | Daniel Hahler | git@thequod.de | 1322139430 |  | Only alias git=hub if `hub --version` works.  `hub` is crashing for me on a old CentOS setup with "undefined method `shelljoin'".  On first use of the `git` function it is now checked if `hub --version` returns successfully.
+f | _github | g | 1.3K |  | Sven Lito | me@svenlito.com | 1286645881 |  | bugfix - moved gem info

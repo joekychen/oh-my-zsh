@@ -1,0 +1,2 @@
+f | macports.plugin.zsh | g | 222B |  | Pat Regan | thehead@patshead.com | 1302644469 |  | Optimize plugin loading so that only one call to compinit is required
+f | _port | g | 1.5K |  | Matt Cable | wozz@wookie.net | 1300054908 |  | Add completion for port command

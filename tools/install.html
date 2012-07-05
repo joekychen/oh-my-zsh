@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html><head><title>joekychen/oh-my-zsh » tools › install.sh
+
+</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="generator" content="Docco">
+<link rel="stylesheet" media="all" href="../stylesheets/docco.min.css" />
+
+
+</head>
+<body>
+<div id="container">
+<div id="background"></div>
+<table cellpadding="0" cellspacing="0">
+<thead><tr><th class="docs"><a id="home" href="../index.html"></a><h1>install.sh</h1></th><th class="code"></th></tr></thead>
+<tbody>
+
+
+<tr id="section-1"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-1">&#182;</a></div></td><td class="code"><div class="highlight"><pre><span class="k">if</span> <span class="o">[</span> -d ~/.oh-my-zsh <span class="o">]</span>
+<span class="k">then</span>
+<span class="k">  </span><span class="nb">echo</span> <span class="s2">&quot;\033[0;33mYou already have Oh My Zsh installed.\033[0m You&#39;ll need to remove ~/.oh-my-zsh if you want to install&quot;</span>
+  <span class="nb">exit</span>
+<span class="k">fi</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;\033[0;34mCloning Oh My Zsh...\033[0m&quot;</span>
+<span class="nb">hash </span>git &gt;/dev/null <span class="o">&amp;&amp;</span> /usr/bin/env git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh <span class="o">||</span> <span class="o">{</span>
+  <span class="nb">echo</span> <span class="s2">&quot;git not installed&quot;</span>
+  <span class="nb">exit</span>
+<span class="o">}</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;\033[0;34mLooking for an existing zsh config...\033[0m&quot;</span>
+<span class="k">if</span> <span class="o">[</span> -f ~/.zshrc <span class="o">]</span> <span class="o">||</span> <span class="o">[</span> -h ~/.zshrc <span class="o">]</span>
+<span class="k">then</span>
+<span class="k">  </span><span class="nb">echo</span> <span class="s2">&quot;\033[0;33mFound ~/.zshrc.\033[0m \033[0;32]Backing up to ~/.zshrc.pre-oh-my-zsh\033[0m&quot;</span>;
+  cp ~/.zshrc ~/.zshrc.pre-oh-my-zsh;
+  rm ~/.zshrc;
+<span class="k">fi</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;\033[0;34mUsing the Oh My Zsh template file and adding it to ~/.zshrc\033[0m&quot;</span>
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+
+<span class="nb">echo</span> <span class="s2">&quot;\033[0;34mCopying your current PATH and adding it to the end of ~/.zshrc for you.\033[0m&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;export PATH=$PATH&quot;</span> &gt;&gt; ~/.zshrc
+
+<span class="nb">echo</span> <span class="s2">&quot;\033[0;34mTime to change your default shell to zsh!\033[0m&quot;</span>
+chsh -s <span class="sb">`</span>which zsh<span class="sb">`</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;\033[0;32m&quot;</span><span class="s1">&#39;         __                                     __   &#39;</span><span class="s2">&quot;\033[0m&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;\033[0;32m&quot;</span><span class="s1">&#39;  ____  / /_     ____ ___  __  __   ____  _____/ /_  &#39;</span><span class="s2">&quot;\033[0m&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;\033[0;32m&quot;</span><span class="s1">&#39; / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ &#39;</span><span class="s2">&quot;\033[0m&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;\033[0;32m&quot;</span><span class="s1">&#39;/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / &#39;</span><span class="s2">&quot;\033[0m&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;\033[0;32m&quot;</span><span class="s1">&#39;\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  &#39;</span><span class="s2">&quot;\033[0m&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;\033[0;32m&quot;</span><span class="s1">&#39;                        /____/                       &#39;</span><span class="s2">&quot;\033[0m&quot;</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;\n\n \033[0;32m....is now installed.\033[0m&quot;</span>
+/usr/bin/env zsh
+<span class="nb">source</span> ~/.zshrc
+
+</pre></div></td></tr>
+
+</tbody>
+</table>
+</div>
+
+</body>
+<script>docas={repo:"joekychen/oh-my-zsh",depth:1}</script>
+<script>document.write('<script src=' + ('__proto__' in {} ? 'http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js' : 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')+'><\\/script>')</script>
+<script src="http://baoshan.github.com/moment/min/moment.min.js"></script>
+<script src="../javascript/docco.min.js"></script>
+</html>

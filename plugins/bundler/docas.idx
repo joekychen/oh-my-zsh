@@ -1,0 +1,2 @@
+f | bundler.plugin.zsh | g | 962B |  | Tim Littlemore | tim@tjl2.com | 1338560782 |  | Removing ey command from bundled_commands. It is not usually bundled.
+f | _bundler | g | 3.0K |  | Christopher Chow | soliah@gmail.com | 1298390725 |  | Add tab completion to bundler plugin.

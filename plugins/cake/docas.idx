@@ -1,0 +1,1 @@
+f | cake.plugin.zsh | g | 780B |  | Nick Stenning | nick@whiteink.com | 1316881340 |  | Better cake completion: don't barf on options, and don't clobber user's namespace

@@ -1,0 +1,1 @@
+f | svn.plugin.zsh | g | 989B |  | Mat Gadd | mgadd@names.co.uk | 1336046603 |  | Don't drop everything after a trailing slash, as this breaks standard svn branches: ^/branches/featurename ^/releases/Release-vx.y ^/trunk

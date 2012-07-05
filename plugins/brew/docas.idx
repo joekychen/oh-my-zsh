@@ -1,0 +1,2 @@
+f | brew.plugin.zsh | g | 27B |  | Andrew Hodges | betawaffle@gmail.com | 1306764540 |  | Rollback of Pull #366  sorin-ionescu had some good points.
+f | _brew | g | 2.6K |  | Andrew Hodges | betawaffle@gmail.com | 1306594668 |  | Brew Plugin  Merge completion with official brew completion. Add a helper to link official completion into oh-my-zsh plugin (without overwriting). Add an alias to list installed brews. Add brews to the path (in a somewhat strange way).

@@ -1,0 +1,1 @@
+f | jake-node.plugin.zsh | g | 528B |  | Lachèze Alexandre | alexandre.lacheze@gmail.com | 1322826844 |  | Jake-node plugin : update - remove the need to write a `jake_tasks` in the directory - use most recent usage of completion with zsh - tested for MacOSX and Ubuntu

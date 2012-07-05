@@ -1,0 +1,2 @@
+f | extract.plugin.zsh | g | 2.1K |  | Daniel Bye | dan@slightlystrange.org | 1326720847 |  | Removed the assignments to fpath as well, since that's all handled in the .oh-my-zsh/oh-my-zsh.sh boot script.
+f | _extract | g | 208B |  | Sorin Ionescu | sorin.ionescu@gmail.com | 1306974796 |  | Added extract plugin.

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html><head><title>joekychen/oh-my-zsh » plugins › cloudapp › cloudapp.rb
+
+</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="generator" content="Docco">
+<link rel="stylesheet" media="all" href="../../stylesheets/docco.min.css" />
+
+
+</head>
+<body>
+<div id="container">
+<div id="background"></div>
+<table cellpadding="0" cellspacing="0">
+<thead><tr><th class="docs"><a id="home" href="../../index.html"></a><h1>cloudapp.rb</h1></th><th class="code"></th></tr></thead>
+<tbody>
+
+
+<tr id="section-1"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-1">&#182;</a></div></td><td class="code"><div class="highlight"><pre><span class="c1">#!/usr/bin/env ruby</span></pre></div></td></tr>
+
+
+<tr id="section-2"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-2">&#182;</a></div><p>cloudapp
+Zach Holman / @holman</p>
+
+<p>Uploads a file from the command line to CloudApp, drops it into your 
+clipboard (on a Mac, at least).</p>
+
+<p>Example:</p>
+
+<p>cloudapp drunk-blake.png</p>
+
+<p>This requires Aaron Russell's cloudapp_api gem:</p>
+
+<p>gem install cloudapp_api</p>
+
+<p>Requires you set your CloudApp credentials in ~/.cloudapp as a simple file of:</p>
+
+<p>email
+  password</p></td><td class="code"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;rubygems&#39;</span>
+<span class="k">begin</span>
+  <span class="nb">require</span> <span class="s1">&#39;cloudapp_api&#39;</span>
+<span class="k">rescue</span> <span class="no">LoadError</span>
+  <span class="nb">puts</span> <span class="s2">&quot;You need to install cloudapp_api: gem install cloudapp_api&quot;</span>
+  <span class="nb">exit!</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">config_file</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="no">ENV</span><span class="o">[</span><span class="s1">&#39;HOME&#39;</span><span class="o">]</span><span class="si">}</span><span class="s2">/.cloudapp&quot;</span>
+<span class="k">unless</span> <span class="no">File</span><span class="o">.</span><span class="n">exist?</span><span class="p">(</span><span class="n">config_file</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;You need to type your email and password (one per line) into &quot;</span><span class="o">+</span>
+       <span class="s2">&quot;`~/.cloudapp`&quot;</span>
+  <span class="nb">exit!</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">email</span><span class="p">,</span><span class="n">password</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">config_file</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">HTTParty</span><span class="o">::</span><span class="no">Response</span></pre></div></td></tr>
+
+
+<tr id="section-3"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-3">&#182;</a></div><p>Apparently HTTPOK.ok? IS NOT OKAY WTFFFFFFFFFFUUUUUUUUUUUUUU
+LETS MONKEY PATCH IT I FEEL OKAY ABOUT IT</p></td><td class="code"><div class="highlight"><pre>  <span class="k">def</span> <span class="nf">ok?</span> <span class="p">;</span> <span class="kp">true</span> <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">if</span> <span class="no">ARGV</span><span class="o">[</span><span class="mi">0</span><span class="o">].</span><span class="n">nil?</span>
+   <span class="nb">puts</span> <span class="s2">&quot;You need to specify a file to upload.&quot;</span>
+   <span class="nb">exit!</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="no">CloudApp</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">email</span><span class="p">,</span><span class="n">password</span><span class="p">)</span>
+<span class="n">url</span> <span class="o">=</span> <span class="no">CloudApp</span><span class="o">::</span><span class="no">Item</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="ss">:upload</span><span class="p">,</span> <span class="p">{</span><span class="ss">:file</span> <span class="o">=&gt;</span> <span class="no">ARGV</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">})</span><span class="o">.</span><span class="n">url</span></pre></div></td></tr>
+
+
+<tr id="section-4"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-4">&#182;</a></div><p>Say it for good measure.</p></td><td class="code"><div class="highlight"><pre><span class="nb">puts</span> <span class="s2">&quot;Uploaded to </span><span class="si">#{</span><span class="n">url</span><span class="si">}</span><span class="s2">.&quot;</span></pre></div></td></tr>
+
+
+<tr id="section-5"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-5">&#182;</a></div><p>Get the embed link.</p></td><td class="code"><div class="highlight"><pre><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">url</span><span class="si">}</span><span class="s2">/</span><span class="si">#{</span><span class="no">ARGV</span><span class="o">[</span><span class="mi">0</span><span class="o">].</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">last</span><span class="si">}</span><span class="s2">&quot;</span></pre></div></td></tr>
+
+
+<tr id="section-6"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-6">&#182;</a></div><p>Copy it to your (Mac's) clipboard.</p></td><td class="code"><div class="highlight"><pre><span class="sb">`echo &#39;</span><span class="si">#{</span><span class="n">url</span><span class="si">}</span><span class="sb">&#39; | tr -d &quot;</span><span class="se">\n</span><span class="sb">&quot; | pbcopy`</span>
+
+</pre></div></td></tr>
+
+</tbody>
+</table>
+</div>
+
+</body>
+<script>docas={repo:"joekychen/oh-my-zsh",depth:2}</script>
+<script>document.write('<script src=' + ('__proto__' in {} ? 'http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js' : 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')+'><\\/script>')</script>
+<script src="http://baoshan.github.com/moment/min/moment.min.js"></script>
+<script src="../../javascript/docco.min.js"></script>
+</html>

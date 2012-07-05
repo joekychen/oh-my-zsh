@@ -1,0 +1,1 @@
+f | gpg-agent.plugin.zsh | g | 546B |  | Florian Walch | florian.walch@gmx.at | 1287154239 |  | Added gpg-agent plugin  Based on ssh-agent plugin.

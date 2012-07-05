@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html><head><title>joekychen/oh-my-zsh » tools › theme_chooser.sh
+
+</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="generator" content="Docco">
+<link rel="stylesheet" media="all" href="../stylesheets/docco.min.css" />
+
+
+</head>
+<body>
+<div id="container">
+<div id="background"></div>
+<table cellpadding="0" cellspacing="0">
+<thead><tr><th class="docs"><a id="home" href="../index.html"></a><h1>theme_chooser.sh</h1></th><th class="code"></th></tr></thead>
+<tbody>
+
+
+<tr id="section-1"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-1">&#182;</a></div></td><td class="code"><div class="highlight"><pre><span class="c">#!/bin/zsh</span></pre></div></td></tr>
+
+
+<tr id="section-2"><td class="docs"><div class="pilwrap"><a class="pilcrow" href="#section-2">&#182;</a></div><p>Zsh Theme Chooser by fox (fox91 at anche dot no)
+This program is free software. It comes without any warranty, to
+the extent permitted by applicable law. You can redistribute it
+and/or modify it under the terms of the Do What The Fuck You Want
+To Public License, Version 2, as published by Sam Hocevar. See
+http://sam.zoy.org/wtfpl/COPYING for more details.</p></td><td class="code"><div class="highlight"><pre><span class="nv">THEMES_DIR</span><span class="o">=</span><span class="s2">&quot;$ZSH/themes&quot;</span>
+<span class="nv">FAVLIST</span><span class="o">=</span><span class="s2">&quot;${HOME}/.zsh_favlist&quot;</span>
+<span class="nb">source</span> <span class="nv">$ZSH</span>/oh-my-zsh.sh
+
+<span class="k">function </span>noyes<span class="o">()</span> <span class="o">{</span>
+    <span class="nb">read</span> <span class="s2">&quot;a?$1 [y/N] &quot;</span>
+    <span class="k">if</span> <span class="o">[[</span> <span class="nv">$a</span> <span class="o">==</span> <span class="s2">&quot;N&quot;</span> <span class="o">||</span> <span class="nv">$a</span> <span class="o">==</span> <span class="s2">&quot;n&quot;</span> <span class="o">||</span> <span class="nv">$a</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="o">]]</span>; <span class="k">then</span>
+<span class="k">        return </span>0
+    <span class="k">fi</span>
+<span class="k">    return </span>1
+<span class="o">}</span>
+
+<span class="k">function </span>theme_preview<span class="o">()</span> <span class="o">{</span>
+    <span class="nv">THEME</span><span class="o">=</span><span class="nv">$1</span>
+    <span class="nv">THEME_NAME</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$THEME</span> | sed s/<span class="se">\.</span>zsh-theme<span class="nv">$/</span>/<span class="sb">`</span>
+    print <span class="s2">&quot;$fg[blue]${(l.((${COLUMNS}-${#THEME_NAME}-5))..─.)}$reset_color $THEME_NAME $fg[blue]───$reset_color&quot;</span>
+    <span class="nb">source</span> <span class="s2">&quot;$THEMES_DIR/$THEME&quot;</span>
+    print -P <span class="nv">$PROMPT</span>
+<span class="o">}</span>
+
+<span class="k">function </span>banner<span class="o">()</span> <span class="o">{</span>
+    <span class="nb">echo</span>
+<span class="nb">    echo</span> <span class="s2">&quot;[0;1;35;95m╺━[0;1;31;91m┓┏[0;1;33;93m━┓[0;1;32;92m╻[0m [0;1;36;96m╻[0m   [0;1;35;95m╺┳[0;1;31;91m╸╻[0m [0;1;33;93m╻[0;1;32;92m┏━[0;1;36;96m╸┏[0;1;34;94m┳┓[0;1;35;95m┏━[0;1;31;91m╸[0m   [0;1;32;92m┏━[0;1;36;96m╸╻[0m [0;1;34;94m╻[0;1;35;95m┏━[0;1;31;91m┓┏[0;1;33;93m━┓[0;1;32;92m┏━[0;1;36;96m┓┏[0;1;34;94m━╸[0;1;35;95m┏━[0;1;31;91m┓[0m&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;[0;1;31;91m┏━[0;1;33;93m┛┗[0;1;32;92m━┓[0;1;36;96m┣━[0;1;34;94m┫[0m    [0;1;31;91m┃[0m [0;1;33;93m┣[0;1;32;92m━┫[0;1;36;96m┣╸[0m [0;1;34;94m┃[0;1;35;95m┃┃[0;1;31;91m┣╸[0m    [0;1;36;96m┃[0m  [0;1;34;94m┣[0;1;35;95m━┫[0;1;31;91m┃[0m [0;1;33;93m┃┃[0m [0;1;32;92m┃[0;1;36;96m┗━[0;1;34;94m┓┣[0;1;35;95m╸[0m [0;1;31;91m┣┳[0;1;33;93m┛[0m&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;[0;1;33;93m┗━[0;1;32;92m╸┗[0;1;36;96m━┛[0;1;34;94m╹[0m [0;1;35;95m╹[0m    [0;1;33;93m╹[0m [0;1;32;92m╹[0m [0;1;36;96m╹[0;1;34;94m┗━[0;1;35;95m╸╹[0m [0;1;31;91m╹[0;1;33;93m┗━[0;1;32;92m╸[0m   [0;1;34;94m┗━[0;1;35;95m╸╹[0m [0;1;31;91m╹[0;1;33;93m┗━[0;1;32;92m┛┗[0;1;36;96m━┛[0;1;34;94m┗━[0;1;35;95m┛┗[0;1;31;91m━╸[0;1;33;93m╹┗[0;1;32;92m╸[0m&quot;</span>
+    <span class="nb">echo</span>
+<span class="o">}</span>
+
+<span class="k">function </span>usage<span class="o">()</span> <span class="o">{</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Usage: $0 [options] [theme]&quot;</span>
+    <span class="nb">echo</span>
+<span class="nb">    echo</span> <span class="s2">&quot;Options&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;  -l   List available themes&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;  -s   Show all themes&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;  -h   Get this help message&quot;</span>
+    <span class="nb">exit </span>1
+<span class="o">}</span>
+
+<span class="k">function </span>list_themes<span class="o">()</span> <span class="o">{</span>
+    <span class="k">for </span>THEME in <span class="k">$(</span>ls <span class="nv">$THEMES_DIR</span><span class="k">)</span>; <span class="k">do</span>
+<span class="k">        </span><span class="nv">THEME_NAME</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$THEME</span> | sed s/<span class="se">\.</span>zsh-theme<span class="nv">$/</span>/<span class="sb">`</span>
+        <span class="nb">echo</span> <span class="nv">$THEME_NAME</span>
+    <span class="k">done</span>
+<span class="o">}</span>
+
+<span class="k">function </span>insert_favlist<span class="o">()</span> <span class="o">{</span>
+    <span class="k">if </span>grep -q <span class="s2">&quot;$THEME_NAME&quot;</span> <span class="nv">$FAVLIST</span> 2&gt; /dev/null ; <span class="k">then</span>
+<span class="k">        </span><span class="nb">echo</span> <span class="s2">&quot;Already in favlist&quot;</span>
+    <span class="k">else</span>
+<span class="k">        </span><span class="nb">echo</span> <span class="nv">$THEME_NAME</span> &gt;&gt; <span class="nv">$FAVLIST</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Saved to favlist&quot;</span>
+    <span class="k">fi</span>
+
+<span class="o">}</span>
+
+<span class="k">function </span>theme_chooser<span class="o">()</span> <span class="o">{</span>
+    <span class="k">for </span>THEME in <span class="k">$(</span>ls <span class="nv">$THEMES_DIR</span><span class="k">)</span>; <span class="k">do</span>
+<span class="k">        </span><span class="nb">echo</span>
+<span class="nb">        </span>theme_preview <span class="nv">$THEME</span>
+        <span class="nb">echo</span>
+<span class="nb">        </span><span class="k">if</span> <span class="o">[[</span> -z <span class="nv">$1</span> <span class="o">]]</span>; <span class="k">then</span>
+<span class="k">            </span>noyes <span class="s2">&quot;Do you want to add it to your favourite list ($FAVLIST)?&quot;</span> <span class="o">||</span> <span class="se">\</span>
+                  insert_favlist <span class="nv">$THEME_NAME</span>
+            <span class="nb">echo</span>
+<span class="nb">        </span><span class="k">fi</span>
+<span class="k">    done</span>
+<span class="o">}</span>
+
+<span class="k">while </span><span class="nb">getopts</span> <span class="s2">&quot;:lhs&quot;</span> Option
+<span class="k">do</span>
+<span class="k">  case</span> <span class="nv">$Option</span> in
+    l <span class="o">)</span> list_themes ;;
+    s <span class="o">)</span> theme_chooser 0 ;;
+    h <span class="o">)</span> usage ;;
+    * <span class="o">)</span> usage ;; <span class="c"># Default.</span>
+  <span class="k">esac</span>
+<span class="k">done</span>
+
+<span class="k">if</span> <span class="o">[[</span> -z <span class="nv">$Option</span> <span class="o">]]</span>; <span class="k">then</span>
+<span class="k">    if</span> <span class="o">[[</span> -z <span class="nv">$1</span> <span class="o">]]</span>; <span class="k">then</span>
+<span class="k">        </span>banner
+        <span class="nb">echo</span>
+<span class="nb">        </span>theme_chooser
+    <span class="k">else</span>
+<span class="k">        </span>theme_preview <span class="nv">$1</span><span class="s2">&quot;.zsh-theme&quot;</span>
+    <span class="k">fi</span>
+<span class="k">fi</span>
+
+</pre></div></td></tr>
+
+</tbody>
+</table>
+</div>
+
+</body>
+<script>docas={repo:"joekychen/oh-my-zsh",depth:1}</script>
+<script>document.write('<script src=' + ('__proto__' in {} ? 'http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js' : 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')+'><\\/script>')</script>
+<script src="http://baoshan.github.com/moment/min/moment.min.js"></script>
+<script src="../javascript/docco.min.js"></script>
+</html>
