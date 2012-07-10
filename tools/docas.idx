@@ -1,6 +1,6 @@
-f | require_tool.sh | s | 4.3K | 145 | Tristan Carel | tcarel@exalead.com | 1302708284 |  | Fix version parsing. Now working with command $ zsh --version
 f | install.sh | s | 1.5K | 32 | Renan Cakirerk | renan@cakirerk.org | 1340452684 |  | Fix finding git issue. http://stackoverflow.com/questions/592620/check-if-a-program-exists-from-a-bash-script
-f | check_for_upgrade.sh | s | 862B | 38 | Robby Russell | robby@planetargon.com | 1338483173 |  | Now with 50% less auto-updates.
+f | check_for_upgrade.sh | s | 886B | 39 | joekychen | chensi@healskare.cm | 1341908764 | check for upgrade | Update master
+f | require_tool.sh | s | 4.3K | 145 | Tristan Carel | tcarel@exalead.com | 1302708284 |  | Fix version parsing. Now working with command $ zsh --version
 f | uninstall.sh | s | 481B | 18 | Robby Russell | robby@planetargon.com | 1251756038 |  | Adding an uninstaller tool
 f | upgrade.sh | s | 998B | 17 | backspace | b@chromatin.ca | 1326610192 |  | Don’t report that Oh My Zsh has been updated when it hasn’t.
 f | theme_chooser.sh | s | 3.4K | 84 | fox | fox91@anche.no | 1312357336 |  | fixed theme chooser + options + list available themes + show all themes

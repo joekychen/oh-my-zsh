@@ -1,7 +1,7 @@
 f | README.textile | g | 3.1K |  | Robby Russell | robby@planetargon.com | 1339618463 |  | Updating README to ask people to stop sending themes for now
-f | oh-my-zsh.sh | s | 1.9K | 64 | natsumesou | natsumesouxx@gmail.com | 1337748561 |  | Load symlink custom files      `(.)` search only real files.     The deletion of it enables searching symlink *.zsh files
-d | tools |  | 6 items |  | Renan Cakirerk | renan@cakirerk.org | 1340452684 |  | Fix finding git issue. http://stackoverflow.com/questions/592620/check-if-a-program-exists-from-a-bash-script
+d | tools |  | 6 items |  | joekychen | chensi@healskare.cm | 1341908764 |  | Update master
 d | custom |  | 2 items |  | Jake Bell | jake@theunraveler.com | 1306431277 |  | Adding ability to override plugins from the custom directory.
+f | oh-my-zsh.sh | s | 1.9K | 64 | natsumesou | natsumesouxx@gmail.com | 1337748561 |  | Load symlink custom files      `(.)` search only real files.     The deletion of it enables searching symlink *.zsh files
 d | plugins |  | 78 items |  | Robby Russell | robby@planetargon.com | 1341322116 |  | Merge pull request #1122 from varunkvv/master  sublime pluginn : Added alias for Sublime Text 2 on Linux
 d | templates |  | 1 items |  | Robby Russell | robby@planetargon.com | 1324922949 |  | Merge pull request #776 from mytechnix/master  Added examples aliases in ZSH config template and new theme.
 d | lib |  | 15 items |  | Robby Russell | robby@planetargon.com | 1339619100 |  | Merge pull request #977 from scialex/better-d  Make the 'd' alias only show the directories that can be cd'd to using the number aliases.

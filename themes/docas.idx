@@ -1,111 +1,111 @@
-f | suvash.zsh-theme | g | 1.1K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | pmcgee.zsh-theme | g | 1.2K |  | Suraj N. Kurapati | sunaku@gmail.com | 1294539357 |  | avoid forking subshell to test if user is root
 f | wuffers.zsh-theme | g | 333B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | fletcherm.zsh-theme | g | 1.2K |  | Matt Fletcher | fletcher@atomicobject.com | 1282228157 |  | add fletcherm theme; a slightly modified copy of an old tonotdo theme
-f | jtriley.zsh-theme | g | 537B |  | Justin Riley | justin.t.riley@gmail.com | 1304950750 |  | remove git status from prompt
+f | suvash.zsh-theme | g | 1.1K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | xiong-chiamiov.zsh-theme | g | 553B |  | xiongchiamiov | xiong.chiamiov@gmail.com | 1254795792 |  | add xiong-chiamiov theme
-f | lambda.zsh-theme | g | 203B |  | Danny Tatom | dannytatom@gmail.com | 1294633878 |  | Added lambda theme
 f | fwalch.zsh-theme | g | 336B |  | Florian Walch | florian.walch@gmx.at | 1287133547 |  | Added own theme (based on robbyrussell)
-f | skaro.zsh-theme | g | 325B |  | Doug Fritz | doug@media.mit.edu | 1273264355 |  | added skaro theme
+f | jtriley.zsh-theme | g | 537B |  | Justin Riley | justin.t.riley@gmail.com | 1304950750 |  | remove git status from prompt
+f | lambda.zsh-theme | g | 203B |  | Danny Tatom | dannytatom@gmail.com | 1294633878 |  | Added lambda theme
 f | Soliah.zsh-theme | g | 3.2K |  | Christopher Chow | soliah@gmail.com | 1303386034 |  | Made my them display the current rvm gemset and check for detached head state in git.
-f | humza.zsh-theme | g | 1000B |  | Second Planet | contact@secondplanetanimation.com | 1306797026 |  | added humza.zsh-theme
 f | dpoggi.zsh-theme | g | 580B |  | Dan Poggi | dan.poggi@gmail.com | 1310527221 |  | Added 'dpoggi' theme
-f | gentoo.zsh-theme | g | 191B |  | Igor Vinokurov | zynaps@zynaps.ru | 1291250953 |  | gentoo-like theme w/ git_prompt_info
-f | zhann.zsh-theme | g | 616B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
+f | humza.zsh-theme | g | 1000B |  | Second Planet | contact@secondplanetanimation.com | 1306797026 |  | added humza.zsh-theme
+f | skaro.zsh-theme | g | 325B |  | Doug Fritz | doug@media.mit.edu | 1273264355 |  | added skaro theme
 f | mikeh.zsh-theme | g | 878B |  | Mike Hostetler | mike@squarepegsystems.com | 1273263781 |  | added my theme, based on xiong-chiamiov-plus but using vcs_info instead of just git
 f | sorin.zsh-theme | g | 1.8K |  | Sorin Ionescu | sorin.ionescu@gmail.com | 1296770571 |  | Added sorin oh-my-zsh theme.
-f | gallois.zsh-theme | g | 898B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
+f | zhann.zsh-theme | g | 616B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
+f | gentoo.zsh-theme | g | 191B |  | Igor Vinokurov | zynaps@zynaps.ru | 1291250953 |  | gentoo-like theme w/ git_prompt_info
 f | dieter.zsh-theme | g | 2.0K |  | Dieter Plaetinck | dieter@plaetinck.be | 1290625480 |  | better phrasing/documentation
+f | gallois.zsh-theme | g | 898B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | duellj.zsh-theme | g | 544B |  | Jon Duell | duellj@gmail.com | 1273263610 |  | Adds new duellj theme
 f | linuxonly | g | 2.7K |  | Hayes Williams | hwpi31@gmail.com | 1274979254 |  | Adds a new theme that only seems to work on Linux
-f | lukerandall.zsh-theme | g | 903B |  | Luke Randall | luke.randall@mit-can.com | 1304097980 |  | Add fine-grained git prompt status to lukerandall.zsh-theme
-f | superjarin.zsh-theme | g | 975B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
-f | darkblood.zsh-theme | g | 632B |  | meh | meh.ffff@gmail.com | 1257722106 |  | Fixed darkblood theme as in issue #23.
 f | nebirhos.zsh-theme | g | 997B |  | jugyo | jugyo.org@gmail.com | 1340232110 |  | correct the ruby version label for rbenv
+f | superjarin.zsh-theme | g | 975B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
+f | lukerandall.zsh-theme | g | 903B |  | Luke Randall | luke.randall@mit-can.com | 1304097980 |  | Add fine-grained git prompt status to lukerandall.zsh-theme
+f | darkblood.zsh-theme | g | 632B |  | meh | meh.ffff@gmail.com | 1257722106 |  | Fixed darkblood theme as in issue #23.
 f | macovsky.zsh-theme | g | 662B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
-f | wezm+.zsh-theme | g | 443B |  | Vincent Driessen | vincent@datafox.nl | 1275005653 |  | Added customized version of the wezm theme (mainly added username/host in the prompt).
 f | awesomepanda.zsh-theme | g | 688B |  | Robin Ramael | robin.ramael@gmail.com | 1294679911 |  | Added svn info in prompt with plugin.  If the svn plugin is used, svn info (repo name and wether the repo is dirty) is displayed in the prompt like with git. Just lke with git, the colors can be manipulated with variables (see awesomepanda theme for example).
+f | wezm+.zsh-theme | g | 443B |  | Vincent Driessen | vincent@datafox.nl | 1275005653 |  | Added customized version of the wezm theme (mainly added username/host in the prompt).
 f | flazz.zsh-theme | g | 652B |  | Francesco Lazzarino | flazzarino@gmail.com | 1294672564 |  | theme based on afowler with vi-mode support
-f | wedisagree.zsh-theme | g | 4.2K |  | Clement Girault | sub@transatmedia.com | 1307288227 |  | New theme, Read contents for further customising.
 f | fishy.zsh-theme | g | 805B |  | Suraj N. Kurapati | sunaku@gmail.com | 1306369125 |  | fishy theme: text indicators for $? and git status  The git status indicators were taken from sorin.zsh-theme and changed to use ASCII symbols instead of Unicode ones because my preferred terminal font, DejaVu Sans Mono, renders Unicode symbols poorly and also because Unicode rendering is not available in standard Linux virtual terminals.
-f | gozilla.zsh-theme | g | 616B |  | Irakli Gozalishvili | rfobic@gmail.com | 1286640360 |  | changeing unicode characters that were causing issues
+f | wedisagree.zsh-theme | g | 4.2K |  | Clement Girault | sub@transatmedia.com | 1307288227 |  | New theme, Read contents for further customising.
 f | theunraveler.zsh-theme | g | 579B |  | Jake Bell | jake.b.bell@gmail.com | 1292814501 |  | Updating theunraveler theme to include more detailed git info.
+f | gozilla.zsh-theme | g | 616B |  | Irakli Gozalishvili | rfobic@gmail.com | 1286640360 |  | changeing unicode characters that were causing issues
+f | dstufft.zsh-theme | g | 661B |  | dstufft | donald.stufft@gmail.com | 1273263975 |  | added the dstufft theme (based on prose by sjl)
+f | example.zsh-theme | g | 160B |  | Robby Russell | robby@planetargon.com | 1251729931 |  | Adding theme support so that people can share their zsh prompts with others. Users can set which theme to load in zshrc now.
 f | evan.zsh-theme | g | 91B |  | Robby Russell | robby@planetargon.com | 1251736055 |  | Adding Evan's skinny, topless prompt.
 f | blinks.zsh-theme | g | 649B |  | Adam Blinkinsop | blinks@acm.org | 1310666766 |  | Added a new theme.
-f | example.zsh-theme | g | 160B |  | Robby Russell | robby@planetargon.com | 1251729931 |  | Adding theme support so that people can share their zsh prompts with others. Users can set which theme to load in zshrc now.
-f | dstufft.zsh-theme | g | 661B |  | dstufft | donald.stufft@gmail.com | 1273263975 |  | added the dstufft theme (based on prose by sjl)
-f | rkj-repos.zsh-theme | g | 1.5K |  | Roman Kamyk | roman.kamyk@gmail.com | 1316506697 |  | split rkj into two themes.
 f | maran.zsh-theme | g | 317B |  | Toon Claes | toon@tonotdo.com | 1257800700 |  | Fixed all themes so tab-completion doesn't move the cursor to a weird position
-f | dallas.zsh-theme | g | 1.6K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | edvardm.zsh-theme | g | 367B |  | Edvard Majakari | edvard.majakari@leonidasoy.fi | 1273264323 |  | added my theme
-f | crunch.zsh-theme | g | 1.8K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
-f | sunaku.zsh-theme | g | 794B |  | Suraj N. Kurapati | sunaku@gmail.com | 1306985947 |  | add "sunaku" theme, see http://ompldr.org/vOHcwZg
+f | dallas.zsh-theme | g | 1.6K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
+f | rkj-repos.zsh-theme | g | 1.5K |  | Roman Kamyk | roman.kamyk@gmail.com | 1316506697 |  | split rkj into two themes.
 f | terminalparty.zsh-theme | g | 339B |  | thackoun | thackoun@gmail.com | 1339505280 |  | fix a very minor bug with colors of parenthesis in the terminalparty theme
+f | sunaku.zsh-theme | g | 794B |  | Suraj N. Kurapati | sunaku@gmail.com | 1306985947 |  | add "sunaku" theme, see http://ompldr.org/vOHcwZg
 f | fox.zsh-theme | g | 541B |  | fox | fox91@anche.no | 1311105754 |  | fox's theme + theme chooser fixes
+f | crunch.zsh-theme | g | 1.8K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | jreese.zsh-theme | g | 580B |  | Suraj N. Kurapati | sunaku@gmail.com | 1294539357 |  | avoid forking subshell to test if user is root
-f | kphoen.zsh-theme | g | 1.7K |  | kphoen | geek63@gmail.com | 1302597653 |  | Add: new theme
 f | sammy.zsh-theme | g | 191B |  | Tate Johnson | tate@tatey.com | 1324869386 |  | Black on white theme inspired by Sam Stephenson's terminal screenshot on https://github.com/sstephenson/rbenv
+f | kphoen.zsh-theme | g | 1.7K |  | kphoen | geek63@gmail.com | 1302597653 |  | Add: new theme
 f | geoffgarside.zsh-theme | g | 258B |  | Christopher Sexton | csexton@gmail.com | 1252946573 |  | Added risto theme and made git.zsh themable   * git.zsh is now themable:    * git_prompt_info() now will look in the following variables for      formatting strings:      * ZSH_THEME_GIT_PROMPT_PREFIX - Prefix for the prompt (before the        branch name)      * ZSH_THEME_GIT_PROMPT_SUFFIX - The very end of the prompt      * ZSH_THEME_GIT_PROMPT_DIRTY - Displayed when the branch is dirty      * ZSH_THEME_GIT_PROMPT_CLEAN - Displayed when the branch is clean  * Updated geoffgarside, robbyrussell, and maran to work with new git    theme  * Added the Risto theme, which is very similar to a number of bash    prompts, and allows me to use zsh in with out my co-workers knowing I    have the advantage. Think of it as a ninja theme.
 f | steeef.zsh-theme | g | 2.8K |  | Kristi | kristi.dev@gmail.com | 1339618471 |  | add --directory flag
 f | macovsky-ruby.zsh-theme | g | 663B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
-f | candy.zsh-theme | g | 371B |  | Alessandro Ghedini | al3xbio@gmail.com | 1281988041 |  | add candy theme
 f | takashiyoshida.zsh-theme | g | 788B |  | Takashi Yoshida | takashi@takashiyoshida.org | 1275751461 |  | Added my own theme.
-f | obraun.zsh-theme | g | 538B |  | Oliver Braun | ob@obraun.net | 1305923205 |  | Added obraun theme which is a slightly modified version of an already existing theme.
+f | candy.zsh-theme | g | 371B |  | Alessandro Ghedini | al3xbio@gmail.com | 1281988041 |  | add candy theme
 f | cypher.zsh-theme | g | 258B |  | Markus Prinz | markus.prinz@nuclearsquid.com | 1254863983 |  | Fix cypher's theme for older zsh versions
 f | jnrowe.zsh-theme | g | 958B |  | James Rowe | jnrowe@gmail.com | 1257722152 |  | Added initial jnrowe theme.
+f | obraun.zsh-theme | g | 538B |  | Oliver Braun | ob@obraun.net | 1305923205 |  | Added obraun theme which is a slightly modified version of an already existing theme.
 f | miloshadzic.zsh-theme | g | 359B |  | Miloš Hadžić | milos.hadzic@gmail.com | 1306925115 |  | Adds my theme
-f | josh.zsh-theme | g | 1.1K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | norm.zsh-theme | g | 229B |  | Jurriën Stutterheim | j.stutterheim@me.com | 1305890464 |  | Update, no more full path
 f | pygmalion.zsh-theme | g | 487B |  | Dominick LoBraico | dj@lobraico.com | 1323454734 |  | forks miloshadzic theme to add more directory info as well as user and host info
 f | gallifrey.zsh-theme | g | 358B |  | Jordan Bracco | jordan@bracco.name | 1258085421 |  | Gallifrey theme
+f | josh.zsh-theme | g | 1.1K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | fino.zsh-theme | g | 1.5K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
-f | re5et.zsh-theme | g | 684B |  | atom smith | re5etsmyth@gmail.com | 1286142177 |  | should have newline at end of file.
-f | mortalscumbag.zsh-theme | g | 1.8K |  | Michael Andersen | michael.andersen.85@gmail.com | 1325118643 |  | Mortal Scumbag Theme
 f | mrtazz.zsh-theme | g | 378B |  | Daniel Schauenberg | d@unwiredcouch.com | 1282228025 |  | add simple mrtazz theme based on robbyrussell  - simple theme - hostname and current folder on left prompt - git branch and working tree status on the right
-f | trapd00r.zsh-theme | g | 3.2K |  | Magnus Woldrich | m@japh.se | 1306662924 |  | add trapd00r theme
-f | tjkirch.zsh-theme | g | 518B |  | Tom Kirchner | tjkirch+github@gmail.com | 1300149817 |  | No space before prompt char at beginning of line
-f | mh.zsh-theme | g | 1.5K |  | Michael Holachek | michael.holachek@gmail.com | 1324920002 |  | Added example aliases in ZSH template. Added a new theme.  Example aliases allow for an easier way to open ZSH config file/folder in Textmate. New theme is mh.zsh-theme.
+f | mortalscumbag.zsh-theme | g | 1.8K |  | Michael Andersen | michael.andersen.85@gmail.com | 1325118643 |  | Mortal Scumbag Theme
+f | re5et.zsh-theme | g | 684B |  | atom smith | re5etsmyth@gmail.com | 1286142177 |  | should have newline at end of file.
 f | arrow.zsh-theme | g | 505B |  | Suraj N. Kurapati | sunaku@gmail.com | 1294539357 |  | avoid forking subshell to test if user is root
-f | simple.zsh-theme | g | 212B |  | Jan-Oliver Jahner | jan-oliver.jahner@tolingo.com | 1305897250 |  | Added 'simple' theme.
-f | imajes.zsh-theme | g | 107B |  | James Cox | james@imaj.es | 1253656938 |  | minimalist
+f | tjkirch.zsh-theme | g | 518B |  | Tom Kirchner | tjkirch+github@gmail.com | 1300149817 |  | No space before prompt char at beginning of line
+f | trapd00r.zsh-theme | g | 3.2K |  | Magnus Woldrich | m@japh.se | 1306662924 |  | add trapd00r theme
+f | mh.zsh-theme | g | 1.5K |  | Michael Holachek | michael.holachek@gmail.com | 1324920002 |  | Added example aliases in ZSH template. Added a new theme.  Example aliases allow for an easier way to open ZSH config file/folder in Textmate. New theme is mh.zsh-theme.
 f | sporty_256.zsh-theme | g | 588B |  | canthiswait | canthiswait@gmail.com | 1273203992 |  | Fixed color in last character of clean git info
+f | imajes.zsh-theme | g | 107B |  | James Cox | james@imaj.es | 1253656938 |  | minimalist
+f | simple.zsh-theme | g | 212B |  | Jan-Oliver Jahner | jan-oliver.jahner@tolingo.com | 1305897250 |  | Added 'simple' theme.
 f | risto.zsh-theme | g | 311B |  | Christopher Sexton | csexton@gmail.com | 1252946573 |  | Added risto theme and made git.zsh themable   * git.zsh is now themable:    * git_prompt_info() now will look in the following variables for      formatting strings:      * ZSH_THEME_GIT_PROMPT_PREFIX - Prefix for the prompt (before the        branch name)      * ZSH_THEME_GIT_PROMPT_SUFFIX - The very end of the prompt      * ZSH_THEME_GIT_PROMPT_DIRTY - Displayed when the branch is dirty      * ZSH_THEME_GIT_PROMPT_CLEAN - Displayed when the branch is clean  * Updated geoffgarside, robbyrussell, and maran to work with new git    theme  * Added the Risto theme, which is very similar to a number of bash    prompts, and allows me to use zsh in with out my co-workers knowing I    have the advantage. Think of it as a ninja theme.
 f | nanotech.zsh-theme | g | 258B |  | NanoTech | nanotech008@gmail.com | 1289775193 |  | themes/nanotech: Use the new built-in zsh color variables.
-f | kardan.zsh-theme | g | 273B |  | Daniel Karlsson | daniel@fraction4.com | 1291388298 |  | Updated the PROMT.
-f | aussiegeek.zsh-theme | g | 325B |  | Alan Harper | alan@aussiegeek.net | 1275005597 |  | aussiegeek theme (include showing rvm prompt)
 f | frisk.zsh-theme | g | 407B |  | James Frasca | james@roundeights.com | 1302597554 |  | Added the Frisk theme
-f | funky.zsh-theme | g | 601B |  | Robby Russell | robby@planetargon.com | 1251729931 |  | Adding theme support so that people can share their zsh prompts with others. Users can set which theme to load in zshrc now.
-f | murilasso.zsh-theme | g | 631B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
+f | aussiegeek.zsh-theme | g | 325B |  | Alan Harper | alan@aussiegeek.net | 1275005597 |  | aussiegeek theme (include showing rvm prompt)
+f | kardan.zsh-theme | g | 273B |  | Daniel Karlsson | daniel@fraction4.com | 1291388298 |  | Updated the PROMT.
 f | muse.zsh-theme | g | 1.1K |  | Matt Sacks | matt.s.sacks@gmail.com | 1304080126 |  | Add muse theme for 256 color terminals
+f | murilasso.zsh-theme | g | 631B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | rgm.zsh-theme | g | 268B |  | Ryan McCuaig | rgm@actonostry.ca | 1273264007 |  | Add my preferred prompt
-f | mgutz.zsh-theme | g | 256B |  | Mario Gutierrez | mgutz@debian5.home.lan | 1273263659 |  | my theme
+f | funky.zsh-theme | g | 601B |  | Robby Russell | robby@planetargon.com | 1251729931 |  | Adding theme support so that people can share their zsh prompts with others. Users can set which theme to load in zshrc now.
 f | rkj.zsh-theme | g | 523B |  | Roman Kamyk | roman.kamyk@gmail.com | 1316506697 |  | split rkj into two themes.
-f | apple.zsh-theme | g | 851B |  | Christian Höltje | docwhat@gerf.org | 1321338029 |  | Added add-zsh-hook support to themes  I added add-zsh-hook support to the themes that didn't have it already. This allows the themes to co-exist with plugins and lib/termsupport.
 f | nicoulaj.zsh-theme | g | 1.6K |  | Julien Nicoulaud | julien.nicoulaud@gmail.com | 1290280339 |  | Avoid duplicate path cropping
+f | apple.zsh-theme | g | 851B |  | Christian Höltje | docwhat@gerf.org | 1321338029 |  | Added add-zsh-hook support to themes  I added add-zsh-hook support to the themes that didn't have it already. This allows the themes to co-exist with plugins and lib/termsupport.
+f | mgutz.zsh-theme | g | 256B |  | Mario Gutierrez | mgutz@debian5.home.lan | 1273263659 |  | my theme
 f | kolo.zsh-theme | g | 719B |  | Christian Höltje | docwhat@gerf.org | 1321338029 |  | Added add-zsh-hook support to themes  I added add-zsh-hook support to the themes that didn't have it already. This allows the themes to co-exist with plugins and lib/termsupport.
 f | sunrise.zsh-theme | g | 3.0K |  | Adam Lindberg | eproxus@gmail.com | 1307547209 |  | Fix MM lines being read correctly
 f | garyblessington.zsh-theme | g | 312B |  | Toon Claes | toon@tonotdo.com | 1257800700 |  | Fixed all themes so tab-completion doesn't move the cursor to a weird position
 f | clean.zsh-theme | g | 1.2K |  | Suraj N. Kurapati | sunaku@gmail.com | 1294539357 |  | avoid forking subshell to test if user is root
 f | smt.zsh-theme | g | 3.8K |  | Stephen Tudor | smt@sunblu.sh | 1308500543 |  | Changed kanji to fuku (good luck)
+f | eastwood.zsh-theme | g | 881B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | juanghurtado.zsh-theme | g | 1.5K |  | Juan G. Hurtado | juan.g.hurtado@gmail.com | 1304075498 |  | Custom theme with Git support  This is my personal oh-my-zsh theme. It has Git support through methods found in Git lib file of oh-my-zsh. It uses:  - parse_git_dirty() - git_prompt_ahead() - current_branch() - git_prompt_short_sha() - git_prompt_status()  It also shows user name, machine name and current path. You can take a look at a screenshot at http://goo.gl/ZVoyk
 f | robbyrussell.zsh-theme | g | 361B |  | Christopher Sexton | csexton@gmail.com | 1252946573 |  | Added risto theme and made git.zsh themable   * git.zsh is now themable:    * git_prompt_info() now will look in the following variables for      formatting strings:      * ZSH_THEME_GIT_PROMPT_PREFIX - Prefix for the prompt (before the        branch name)      * ZSH_THEME_GIT_PROMPT_SUFFIX - The very end of the prompt      * ZSH_THEME_GIT_PROMPT_DIRTY - Displayed when the branch is dirty      * ZSH_THEME_GIT_PROMPT_CLEAN - Displayed when the branch is clean  * Updated geoffgarside, robbyrussell, and maran to work with new git    theme  * Added the Risto theme, which is very similar to a number of bash    prompts, and allows me to use zsh in with out my co-workers knowing I    have the advantage. Think of it as a ninja theme.
-f | eastwood.zsh-theme | g | 881B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
-f | alanpeabody.zsh-theme | g | 1.0K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | daveverwer.zsh-theme | g | 308B |  | Dave Verwer | dave.verwer@shinydevelopment.com | 1273264250 |  | New theme "daveverwer", based on "geoffgarside".
-f | jispwoso.zsh-theme | g | 169B |  | Jonas Huckestein | jonas.huckestein@gmail.com | 1304456855 |  | added my theme
+f | alanpeabody.zsh-theme | g | 1.0K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
 f | dst.zsh-theme | g | 513B |  | Suraj N. Kurapati | sunaku@gmail.com | 1294539357 |  | avoid forking subshell to test if user is root
+f | jispwoso.zsh-theme | g | 169B |  | Jonas Huckestein | jonas.huckestein@gmail.com | 1304456855 |  | added my theme
 f | afowler.zsh-theme | g | 394B |  | Suraj N. Kurapati | sunaku@gmail.com | 1294539357 |  | avoid forking subshell to test if user is root
-f | philips.zsh-theme | g | 1.3K |  | Robby Russell | robby@planetargon.com | 1311434945 |  | Merge pull request #107 from philips/philips-theme  Philips theme, sorry :-/
 f | rixius.zsh-theme | g | 839B |  | Stephen Middleton | rixius@gmail.com | 1294990281 |  | added newline
 f | wezm.zsh-theme | g | 366B |  | Wesley Moore | wez@wezm.net | 1254955832 |  | Add my own theme
-f | jonathan.zsh-theme | g | 3.9K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
-f | minimal.zsh-theme | g | 523B |  | brian tse | briankftse@gmail.com | 1306598252 |  | Add new 'minimal' theme
-f | gnzh.zsh-theme | g | 1.8K |  | Max Gonzih | gonzih@gmail.com | 1313231557 |  | oops, restore broken theme preview
+f | philips.zsh-theme | g | 1.3K |  | Robby Russell | robby@planetargon.com | 1311434945 |  | Merge pull request #107 from philips/philips-theme  Philips theme, sorry :-/
 f | bira.zsh-theme | g | 799B |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
+f | minimal.zsh-theme | g | 523B |  | brian tse | briankftse@gmail.com | 1306598252 |  | Add new 'minimal' theme
+f | jonathan.zsh-theme | g | 3.9K |  | Brent Faulkner | brent.faulkner@mosaic.com | 1327369374 |  | adding rbenv support to all the rvm themes
+f | gnzh.zsh-theme | g | 1.8K |  | Max Gonzih | gonzih@gmail.com | 1313231557 |  | oops, restore broken theme preview
 f | jbergantine.zsh-theme | g | 365B |  | Joseph Bergantine | jbergantine@gmail.com | 1275005739 |  | adding my zsh theme -- only difference from robby's being that i'm using white instead of blue for legibility over brown
 f | kennethreitz.zsh-theme | g | 450B |  | Kenneth Reitz | me@kennethreitz.com | 1283194763 |  | Added the truly epic kennethreitz theme.
-f | tonotdo.zsh-theme | g | 1.2K |  | Toon Claes | toon@tonotdo.com | 1258152937 |  | tonotdo theme: Back to the original
 f | xiong-chiamiov-plus.zsh-theme | g | 573B |  | Ryan Wilcox | rwilcox@wilcoxd.com | 1261977983 |  | fork xiong-chiamiov theme for git support
+f | tonotdo.zsh-theme | g | 1.2K |  | Toon Claes | toon@tonotdo.com | 1258152937 |  | tonotdo theme: Back to the original
 f | cloud.zsh-theme | g | 375B |  | Phillip Ridlen | phillip@balcomagency.com | 1286316368 |  | Add cloud.zsh-theme
-f | fino-time.zsh-theme | g | 1.4K |  | Alexander Berezovsky | ab@plumdistrict.com | 1337817798 |  | fino-time theme
 f | dogenpunk.zsh-theme | g | 3.5K |  | Matthew M. Nelson | dogenpunk@gmail.com | 1301597489 |  | Adding dogenpunk theme
+f | fino-time.zsh-theme | g | 1.4K |  | Alexander Berezovsky | ab@plumdistrict.com | 1337817798 |  | fino-time theme
