@@ -1,3 +1,5 @@
+#    check for upgrade
+
 #!/bin/sh
 
 function _current_epoch() {
