@@ -1,15 +1,15 @@
 f | key-bindings.zsh | g | 1.4K |  | Mat Schaffer | mat@schaffer.me | 1332032581 |  | Don't clobber standard Esc+. behavior  Esc+. works as "last arg" on both bash and zsh. Seems like a shame to introduce a new standard.
 f | completion.zsh | g | 2.7K |  | s3 | s3+dev@sdfeu.org | 1339489082 |  | Change hardcoded ~/.oh-my-zsh to $ZSH.
-f | edit-command-line.zsh | g | 92B |  | Christopher Sexton | csexton@gmail.com | 1310997299 |  | C-x C-e to edit current command in EDITOR  The command C-x C-e opens the current command line for editing in the editor defined by the $EDITOR environment variable.  Thanks to Craig Bosma and his blog post about this: http://distrustsimplicity.net/articles/zsh-command-editing
 f | history.zsh | g | 354B |  | Göran Gustafsson | gustafsson.g@gmail.com | 1322914717 |  | Removed duplicate setting and sorted the remaining
-f | directories.zsh | g | 768B |  | Alex Light | scialexlight@gmail.com | 1330455177 |  | made the 'd' alias only show the directories that can be cd'ed to using the number aliases
+f | edit-command-line.zsh | g | 92B |  | Christopher Sexton | csexton@gmail.com | 1310997299 |  | C-x C-e to edit current command in EDITOR  The command C-x C-e opens the current command line for editing in the editor defined by the $EDITOR environment variable.  Thanks to Craig Bosma and his blog post about this: http://distrustsimplicity.net/articles/zsh-command-editing
+f | theme-and-appearance.zsh | g | 1006B |  | Robby Russell | robby@planetargon.com | 1298353500 |  | Merge branch 'nicoulaj-theme' of https://github.com/nicoulaj/oh-my-zsh into nicoulaj-nicoulaj-theme
 f | grep.zsh | g | 119B |  | Robby Russell | robby@planetargon.com | 1253717016 |  | Moving all zsh config options into a lib/ subdirectory to make way for some upcoming changes to directory structure and configuration options
 f | spectrum.zsh | g | 760B |  | Benjamin Boudreau | dreurmail@gmail.com | 1311433785 |  | Add utility method to spectrum
-f | theme-and-appearance.zsh | g | 1006B |  | Robby Russell | robby@planetargon.com | 1298353500 |  | Merge branch 'nicoulaj-theme' of https://github.com/nicoulaj/oh-my-zsh into nicoulaj-nicoulaj-theme
+f | directories.zsh | g | 768B |  | Alex Light | scialexlight@gmail.com | 1330455177 |  | made the 'd' alias only show the directories that can be cd'ed to using the number aliases
 f | correction.zsh | g | 256B |  | James Rowe | jnrowe@gmail.com | 1275751433 |  | Don't correct hpodder commands.
-f | aliases.zsh | g | 381B |  | Sorin Ionescu | sorin.ionescu@gmail.com | 1306974796 |  | Added extract plugin.
-f | git.zsh | g | 3.1K |  | cruser42 | ao2391@columbia.edu | 1329839225 |  | Fixed bug introduced when fixing issue 896
 f | rvm.zsh | g | 160B |  | Alan Harper | alan@aussiegeek.net | 1275005597 |  | Import rvm prompt
-f | functions.zsh | g | 313B |  | Indrajit Raychaudhuri | irc@indrajit.com | 1324823035 |  | Fix upgrade and uninstall functions to pick up $ZSH value
+f | git.zsh | g | 3.1K |  | cruser42 | ao2391@columbia.edu | 1329839225 |  | Fixed bug introduced when fixing issue 896
+f | aliases.zsh | g | 381B |  | Sorin Ionescu | sorin.ionescu@gmail.com | 1306974796 |  | Added extract plugin.
 f | termsupport.zsh | g | 1.4K |  | Jeffrey Dileo | jtdileo@gmail.com | 1331124454 |  | Disabled title function for emacs term mode
 f | misc.zsh | g | 221B |  | Rotem Yaari | vmalloc@gmail.com | 1330590439 |  | Pager is 'less -R' to support colored outputs
+f | functions.zsh | g | 313B |  | Indrajit Raychaudhuri | irc@indrajit.com | 1324823035 |  | Fix upgrade and uninstall functions to pick up $ZSH value
